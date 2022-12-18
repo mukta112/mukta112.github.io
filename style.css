@@ -24,7 +24,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+.nav-logo{
     width: 140px;
 }
 nav ul li{
@@ -66,6 +66,8 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .row{
     display: flex;
@@ -82,10 +84,17 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: 30px;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    text-align: center;
 }
 .tab-titles{
     display: flex;
@@ -110,4 +119,24 @@ nav ul li a:hover::after{
 }
 .tab-links.active-link::after{
     width: 50%;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(2,100px); */
+    grid-gap: 50px 80px;
+    background-color: 1px solid red;
+    padding: 5%;
+}
+.logo img{
+    background-color: bisque;
+    width: 110%;
+    height: 200px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+}
+.logo img:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+    transform: translateY(-15px);
 }
